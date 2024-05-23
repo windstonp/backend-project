@@ -1,0 +1,38 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules -r tsconfig-paths/register src/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/nodemailer": "^6.4.15",
+    "prisma": "^5.14.0",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.13"
+  },
+  "prisma": {
+    "schema": "src/driver/prisma/schema.prisma"
+  },
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": [
+    "src"
+  ]
+}

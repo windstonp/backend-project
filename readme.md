@@ -38,15 +38,15 @@ To get an app password, follow these steps:
 4. Then login to your account.  
 5. On the bottom of the page, you are going to find the app passwords section, where you can create a password.
 
-## About the database dump
+# About the database dump
 
 You can find the database dump sql file in the root folder of the project. You just need to create the database with the name that you specified in the DATABASE_URL variable and apply the dump. (It already comes with some data!)
 
-## About the Postman colletion
+# About the Postman colletion
 
 The postman collection can also be found in the root folder of the project, and you only need to import it on your postman. If you want to, you can change the global variable called baseUrl. (Also, you don't need to worry about setting the token global variable; it is automatically set when you create an account or sign in.)
 
-## Running the project
+# Running the project
 
 
 To run the project, you need to make sure that you have completed the steps above. Then, you can follow these steps:

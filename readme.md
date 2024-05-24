@@ -53,3 +53,9 @@ To run the project, you need to make sure that you have completed the steps abov
 
 1. Run `yarn` on your terminal to download the project dependencies.  
 2. Run `yarn server` to start the project.
+
+# API Documentation
+
+You can find the API documentation here:
+
+https://app.swaggerhub.com/apis-docs/JoaoAlves/backendDevTestApiVirtualLatinos/1.0.0

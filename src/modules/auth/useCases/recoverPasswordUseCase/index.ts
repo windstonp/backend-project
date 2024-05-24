@@ -7,7 +7,7 @@ export class RecoverPasswordUseCase {
   async execute({ token, password }: IRecoverPasswordRequest) {
     const { sub } = verify(token, process.env.AUTH_HASH_SECRET!) as IPayload;
 
-    const user = await prisma.user.findFirst({
+    const user = await prisma.user.findFirstOrThrow({
       where: {
         id: Number(sub),
       },

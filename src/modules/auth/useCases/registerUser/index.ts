@@ -3,7 +3,13 @@ import { prisma } from "database/prismaClient";
 import { hash } from "bcrypt";
 
 export class RegisterUserUseCase {
-  async execute({ password, email }: IAuthRequest) {
+  async execute({
+    password,
+    email,
+    name,
+    number,
+    profile_image,
+  }: IRegisterUserRequest) {
     let user = await prisma.user.findFirst({
       where: {
         email,
@@ -18,6 +24,9 @@ export class RegisterUserUseCase {
 
     user = await prisma.user.create({
       data: {
+        name,
+        number,
+        profile_image,
         password: encryptedPassword,
         email,
       },

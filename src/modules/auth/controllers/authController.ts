@@ -18,11 +18,11 @@ export class AuthController {
   }
 
   async RegisterUser(request: Request, response: Response): Promise<Response> {
-    const { email, password } = request.body;
+    const requestData: IRegisterUserRequest = request.body;
 
     const authRegisterUseCase = new RegisterUserUseCase();
 
-    const result = await authRegisterUseCase.execute({ email, password });
+    const result = await authRegisterUseCase.execute(requestData);
 
     return response.status(200).json(result);
   }

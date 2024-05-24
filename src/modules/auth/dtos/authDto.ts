@@ -9,3 +9,9 @@ interface IRecoverPasswordRequest {
   token: string;
   password: string;
 }
+
+interface IRegisterUserRequest extends IAuthRequest {
+  name: string;
+  number: string;
+  profile_image: string;
+}
